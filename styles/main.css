@@ -61,14 +61,14 @@ h1 {
                 align-items: center; }
     .header__slider-intro {
       margin-left: 10px; }
-      .header__slider-intro_title {
+      .header__slider-intro__title {
         font-family: poppins, sans-serif;
         font-weight: bold;
         font-size: 13px;
         line-height: 19px;
         letter-spacing: 3px;
         text-transform: uppercase; }
-      .header__slider-intro_text {
+      .header__slider-intro__text {
         font-family: open-sans, sans-serif;
         font-size: 14px;
         line-height: 20px;
@@ -83,12 +83,12 @@ h1 {
     .header__intro-description {
       width: 362px;
       padding-top: 95px; }
-      .header__intro-description_title {
+      .header__intro-description__title {
         font-weight: 600;
         font-size: 64px;
         line-height: 68px;
         letter-spacing: -2px; }
-      .header__intro-description_rubric {
+      .header__intro-description__rubric {
         font-family: open-sans, sans-serif;
         font-size: 18px;
         line-height: 27px; }
@@ -140,13 +140,13 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .header__nav-hire_link {
+    .header__nav-hire__link {
       position: relative;
       letter-spacing: 3px;
       text-transform: uppercase;
       font-weight: bold;
       cursor: pointer; }
-      .header__nav-hire_link::after {
+      .header__nav-hire__link::after {
         display: block;
         position: absolute;
         content: "";
@@ -159,7 +159,7 @@ h1 {
         transition: width 0.3s ease-in-out;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
-    .header__nav-menu_item {
+    .header__nav-menu__item {
       display: inline;
       margin-right: 5vw;
       text-transform: uppercase;
@@ -168,12 +168,12 @@ h1 {
       line-height: 19px;
       font-weight: bold;
       letter-spacing: 3px; }
-    .header__nav .header__nav-menu_link {
+    .header__nav .header__nav-menu__link {
       color: #fff;
       line-height: 1;
       text-decoration: none;
       position: relative; }
-      .header__nav .header__nav-menu_link::after {
+      .header__nav .header__nav-menu__link::after {
         background-color: #ff9c8e;
         display: block;
         content: "";
@@ -186,7 +186,7 @@ h1 {
         transition: width 0.3s ease-in-out;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
-      .header__nav .header__nav-menu_link:hover::after, .header__nav .header__nav-menu_link:focus::after {
+      .header__nav .header__nav-menu__link:hover::after, .header__nav .header__nav-menu__link:focus::after {
         width: 100%; }
   .header__burger {
     display: none;
@@ -240,9 +240,9 @@ h1 {
     padding: 0 0 20px; }
     .header__intro-description.hide {
       display: none; }
-  .header__nav-menu_list {
+  .header__nav-menu__list {
     display: none; }
-    .header__nav-menu_list.active {
+    .header__nav-menu__list.active {
       display: block; }
   .header__nav {
     -webkit-box-align: initial;
@@ -260,7 +260,7 @@ h1 {
     display: block; }
   .header__nav-menu.active {
     display: block; }
-  .header__nav-menu_item {
+  .header__nav-menu__item {
     display: block;
     line-height: 40px;
     font-size: 24px;
@@ -387,16 +387,16 @@ body {
 
 .welcome {
   background: #f2f9ff; }
-  .welcome__content {
+  .welcome-content {
     width: 42vw;
     margin: 0 auto;
     padding: 50px 0; }
-    .welcome__content_title {
+    .welcome-content__title {
       font-weight: 600;
       font-size: 32px;
       line-height: 48px;
       color: #253757; }
-    .welcome__content_description {
+    .welcome-content__description {
       font-family: open-sans, sans-serif;
       font-weight: 600;
       font-size: 24px;
