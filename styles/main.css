@@ -279,21 +279,19 @@ h1 {
 
 .process {
   background: #f2f9ff;
-  padding: 250px 0; }
+  padding: 230px 0; }
   .process-inner {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+            justify-content: space-between; }
     .process-inner .process-description {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; }
+      width: 362px;
+      margin-top: 55px; }
       .process-inner .process-description__name {
         font-weight: bold;
         font-size: 13px;
@@ -312,17 +310,13 @@ h1 {
         line-height: 21px;
         color: #6c788b; }
     .process-inner .process-services {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%;
+      width: 640px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
     .process-inner .process-card {
@@ -333,11 +327,8 @@ h1 {
       padding: 32px;
       margin: 0 30px 30px 0; }
       .process-inner .process-card:nth-child(odd) {
-        -webkit-transform: translateY(60px);
-                transform: translateY(60px); }
-      .process-inner .process-card:nth-child(even) {
-        -webkit-transform: translateY(-50px);
-                transform: translateY(-50px); }
+        -webkit-transform: translateY(120px);
+                transform: translateY(120px); }
       .process-inner .process-card__count {
         border-radius: 23px;
         padding: 2px 12px;
@@ -365,13 +356,13 @@ h1 {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .process-inner .process-card.first .process-sources__link, .process-inner .process-card.second .process-sources__link, .process-inner .process-card.third .process-sources__link, .process-inner .process-card.fourth .process-sources__link {
+        .process-inner .process-card.first .process-sources__text, .process-inner .process-card.second .process-sources__text, .process-inner .process-card.third .process-sources__text, .process-inner .process-card.fourth .process-sources__text {
           font-weight: 600;
           font-size: 15px;
           line-height: 22px;
           color: #253757;
           text-decoration: none; }
-        .process-inner .process-card.first .process-sources__button, .process-inner .process-card.second .process-sources__button, .process-inner .process-card.third .process-sources__button, .process-inner .process-card.fourth .process-sources__button {
+        .process-inner .process-card.first .process-sources__arrow, .process-inner .process-card.second .process-sources__arrow, .process-inner .process-card.third .process-sources__arrow, .process-inner .process-card.fourth .process-sources__arrow {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -381,56 +372,64 @@ h1 {
           -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
           margin-right: 16px; }
-          .process-inner .process-card.first .process-sources__button:hover, .process-inner .process-card.second .process-sources__button:hover, .process-inner .process-card.third .process-sources__button:hover, .process-inner .process-card.fourth .process-sources__button:hover {
-            -webkit-transform: scale(1.2);
-                    transform: scale(1.2);
-            -webkit-transition: 0.3s ease-in-out;
-            transition: 0.3s ease-in-out; }
+      .process-inner .process-card.first .process-sources__arrow {
+        background-color: #008aff; }
       .process-inner .process-card.first .process-card__count {
         color: #56ccf2;
         background: #edfaff; }
-      .process-inner .process-card.first .process-sources__button {
-        background-color: #008aff; }
       .process-inner .process-card.second .process-card__count {
         color: #f0c940;
         background: #fffaea; }
-      .process-inner .process-card.second .process-sources__button {
+      .process-inner .process-card.second .process-sources__arrow {
         background-color: #fcc91d; }
       .process-inner .process-card.third .process-card {
         z-index: 1; }
       .process-inner .process-card.third .process-card__count {
         color: #3bc063;
         background: #e5feeb; }
-      .process-inner .process-card.third .process-sources__button {
+      .process-inner .process-card.third .process-sources__arrow {
         background-color: #15d850; }
       .process-inner .process-card.fourth .process-card__count {
         color: #f36d6c;
         background: #fef0f0; }
-      .process-inner .process-card.fourth .process-sources__button {
+      .process-inner .process-card.fourth .process-sources__arrow {
         background-color: #f36363; }
+      .process-inner .process-card .process-sources__arrow:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
 
 @media (max-width: 1220px) {
   .process-inner {
-    width: 100%; } }
+    width: calc(100% - 20px);
+    margin: 0 10px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   .process-inner {
-    width: 100%;
+    width: 640px;
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
     .process-inner .process-description {
-      text-align: center; }
-    .process-inner .process-card {
-      margin: 0 50px; }
-      .process-inner .process-card:nth-child(odd) {
-        -webkit-transform: translateY(0);
-                transform: translateY(0); }
+      margin: 0 auto; }
     .process-inner .process-services {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      margin-top: 20px; }
+    .process-inner .process-card:nth-child(odd) {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); } }
+
+@media (max-width: 640px) {
+  .process-inner {
+    width: calc(100% - 20px);
+    margin: 0 10px; }
+    .process-inner .process-card {
+      margin-right: 0; }
+    .process-inner .process-services {
+      width: 264px;
+      margin: 20px auto; } }
 
 html {
   scroll-behavior: smooth; }
@@ -487,7 +486,7 @@ a {
   padding-top: 128px;
   text-align: center; }
 
-.expertise__info {
+.expertise-info {
   display: grid;
   grid-template-columns: repeat(3, 240px);
   -webkit-box-pack: space-evenly;
@@ -495,28 +494,33 @@ a {
           justify-content: space-evenly;
   margin-top: 64px;
   padding-bottom: 134px; }
-  .expertise__info .work {
+  .expertise-info .work {
     text-align: center; }
-    .expertise__info .work__photo {
+    .expertise-info .work__photo {
       border-radius: 20%; }
-    .expertise__info .work__title {
+    .expertise-info .work__title {
       font-weight: 600;
       font-size: 20px;
       line-height: 28px;
       color: #253757; }
-    .expertise__info .work__text {
+    .expertise-info .work__text {
       font-family: open-sans, sans-serif;
       font-size: 14px;
       line-height: 21px;
       width: 264px;
       color: #6c788b; }
 
+@media (max-width: 950px) {
+  .expertise-info {
+    grid-template-columns: repeat(2, 240px); } }
+
 @media (max-width: 800px) {
-  .welcome__content {
+  .welcome-content {
     width: 100%; }
-  .about-us__info {
-    grid-template-columns: repeat(2, 240px); }
-  .expertise__info {
+    .welcome-content__description {
+      width: 72vw;
+      font-size: 20px; }
+  .expertise-info {
     grid-template-columns: 240px; } }
 
 /*# sourceMappingURL=main.css.map */
