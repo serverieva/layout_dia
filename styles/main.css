@@ -675,35 +675,43 @@ h1 {
       font-weight: 600;
       font-size: 15px;
       line-height: 22px;
-      border-bottom: 2px solid #fff; }
+      outline: none;
+      border-bottom: 1px solid #fff;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
     .footer-form .email::-webkit-input-placeholder, .footer-form .name::-webkit-input-placeholder, .footer-form .report::-webkit-input-placeholder {
       font-family: poppins, sans-serif;
       font-weight: 600;
       font-size: 15px;
       line-height: 22px;
       color: #fff;
-      opacity: 0.7; }
+      opacity: 0.7;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
     .footer-form .email::-moz-placeholder, .footer-form .name::-moz-placeholder, .footer-form .report::-moz-placeholder {
       font-family: poppins, sans-serif;
       font-weight: 600;
       font-size: 15px;
       line-height: 22px;
       color: #fff;
-      opacity: 0.7; }
+      opacity: 0.7;
+      box-sizing: border-box; }
     .footer-form .email:-ms-input-placeholder, .footer-form .name:-ms-input-placeholder, .footer-form .report:-ms-input-placeholder {
       font-family: poppins, sans-serif;
       font-weight: 600;
       font-size: 15px;
       line-height: 22px;
       color: #fff;
-      opacity: 0.7; }
+      opacity: 0.7;
+      box-sizing: border-box; }
     .footer-form .email::-ms-input-placeholder, .footer-form .name::-ms-input-placeholder, .footer-form .report::-ms-input-placeholder {
       font-family: poppins, sans-serif;
       font-weight: 600;
       font-size: 15px;
       line-height: 22px;
       color: #fff;
-      opacity: 0.7; }
+      opacity: 0.7;
+      box-sizing: border-box; }
     .footer-form .email::placeholder,
     .footer-form .name::placeholder,
     .footer-form .report::placeholder {
@@ -712,7 +720,9 @@ h1 {
       font-size: 15px;
       line-height: 22px;
       color: #fff;
-      opacity: 0.7; }
+      opacity: 0.7;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
   .footer-form .button {
     background: #ff9c8e;
     padding: 15px 90px;
@@ -820,6 +830,126 @@ h1 {
       line-height: 40px;
       display: list-item; } }
 
+.job {
+  background: #fff;
+  position: relative; }
+  .job-description {
+    width: 35vw;
+    margin: 0 auto;
+    padding: 198px 0;
+    text-align: center;
+    z-index: 1;
+    position: relative; }
+  .job__title {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    color: #253757; }
+  .job__text {
+    font-family: open sans, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #6c788b; }
+  .job-shape {
+    border-radius: 50px;
+    -webkit-transform: rotate(-65.1deg);
+            transform: rotate(-65.1deg);
+    position: absolute; }
+  .job .first {
+    width: 93.54px;
+    height: 36.98px;
+    left: 10%;
+    bottom: 15%;
+    border: 4px solid #e18efe; }
+  .job .second {
+    width: 67.36px;
+    height: 26.63px;
+    left: 10%;
+    bottom: 44%;
+    border: 4px solid #afe7f9; }
+  .job .third {
+    width: 143.04px;
+    height: 56.54px;
+    left: 20%;
+    bottom: 40%;
+    border: 5px solid #8eecaa; }
+  .job .fourth {
+    width: 45.28px;
+    height: 17.9px;
+    left: 28%;
+    bottom: 20%;
+    border: 4px solid #fee285; }
+  .job .fifth {
+    width: 85.61px;
+    height: 33.84px;
+    left: 17%;
+    top: 20%;
+    border: 3px solid #f9abab; }
+  .job .sixth {
+    width: 45.28px;
+    height: 17.9px;
+    left: 30%;
+    top: 15%;
+    border: 3px solid #fee286; }
+  .job .seventh {
+    width: 45.28px;
+    height: 17.9px;
+    right: 30%;
+    bottom: 15%;
+    border: 3px solid #de83fe; }
+  .job .eighth {
+    width: 85.61px;
+    height: 33.84px;
+    right: 21%;
+    bottom: 33%;
+    border: 3px solid #f9acac; }
+  .job .ninth {
+    width: 153.61px;
+    height: 60.72px;
+    right: 6%;
+    bottom: 25%;
+    border: 5px solid #ace6f9; }
+  .job .tenth {
+    width: 143.04px;
+    height: 56.54px;
+    right: 15%;
+    top: 28%;
+    border: 5px solid #83eba2; }
+  .job .eleventh {
+    width: 86.41px;
+    height: 34.16px;
+    right: 2%;
+    top: 40%;
+    border: 3px solid #fee286; }
+  .job .twelfth {
+    width: 53.69px;
+    height: 21.22px;
+    right: 8%;
+    top: 20%;
+    border: 4px solid #de83fe; }
+  .job .button {
+    background: #ff9c8e;
+    padding: 15px 90px;
+    border-radius: 64px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 64px; }
+    .job .button:hover {
+      -webkit-transform: translateY(-3px);
+              transform: translateY(-3px);
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      background: #ff6f5b;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+    .job .button__link {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      color: #fff; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -834,8 +964,7 @@ body {
   background: #f2f9ff;
   margin: 0; }
 
-a,
-input {
+a {
   text-decoration: none;
   outline: none; }
 
