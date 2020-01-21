@@ -216,6 +216,8 @@ h1 {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      .header .slider-controls_left:hover, .header .slider-controls_right:hover {
+        opacity: 0.5; }
   .header .slider-intro {
     margin-left: 10px; }
     .header .slider-intro__title {
@@ -247,7 +249,8 @@ h1 {
         -ms-flex-align: initial;
             align-items: initial;
     -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
+    transition: 0.3s ease-in-out;
+    margin: 0 20px; }
   .header-nav {
     -webkit-box-align: initial;
         -ms-flex-align: initial;
@@ -609,6 +612,8 @@ h1 {
             justify-content: space-evenly; } }
 
 @media (max-width: 700px) {
+  .testimonial-heading {
+    margin: 0 auto; }
   .testimonial-wrapper {
     grid-template-columns: 280px; } }
 
@@ -667,18 +672,17 @@ h1 {
     border-bottom: 1px solid #fff;
     background: transparent;
     padding-bottom: 17px;
-    margin-bottom: 48px; }
+    margin-bottom: 48px;
+    outline: none;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px; }
     .footer-form .email:focus,
     .footer-form .name:focus,
     .footer-form .report:focus {
-      font-family: poppins, sans-serif;
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 22px;
-      outline: none;
-      border-bottom: 1px solid #fff;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      border-bottom: 2px solid #fff;
+      padding-bottom: 16px; }
     .footer-form .email::-webkit-input-placeholder, .footer-form .name::-webkit-input-placeholder, .footer-form .report::-webkit-input-placeholder {
       font-family: poppins, sans-serif;
       font-weight: 600;
@@ -1037,9 +1041,12 @@ a {
 @media (max-width: 800px) {
   .welcome-content {
     width: 100%; }
+    .welcome-content__title {
+      text-align: center; }
     .welcome-content__description {
       width: 72vw;
-      font-size: 20px; }
+      font-size: 20px;
+      margin: 0 auto; }
   .expertise-info {
     grid-template-columns: 240px; } }
 
