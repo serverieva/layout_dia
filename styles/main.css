@@ -17,7 +17,7 @@ h1 {
     height: 100vh; }
   .header-inner {
     margin: 0 auto;
-    width: 1200px; }
+    width: 1300px; }
   .header-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28,7 +28,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 20px 0; }
+    padding: 50px 0 0; }
   .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,9 +233,13 @@ h1 {
       line-height: 20px;
       font-weight: normal; }
 
-@media (max-width: 1220px) {
+@media (max-width: 1320px) {
   .header-inner {
     width: 100%; }
+  .header-menu {
+    margin: 0 2vw; }
+  .header .nav-menu__item {
+    margin-right: 4vw; }
   .header-description {
     position: relative;
     -webkit-transform: translateX(170px);
@@ -250,7 +254,7 @@ h1 {
             align-items: initial;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    margin: 0 20px; }
+    margin: 0 2vw; }
   .header-nav {
     -webkit-box-align: initial;
         -ms-flex-align: initial;
@@ -263,7 +267,8 @@ h1 {
       display: block;
       line-height: 40px;
       font-size: 24px;
-      margin-bottom: 36px; }
+      margin-bottom: 36px;
+      margin-right: 4vw; }
     .header-nav .nav-menu .active {
       display: block; }
   .header-slider {
@@ -503,7 +508,7 @@ h1 {
     width: 40vw;
     margin-left: 20px; } }
 
-@media (max-width: 1240px) {
+@media (max-width: 1270px) {
   .approach .approach-inner {
     width: 100%; } }
 
@@ -600,18 +605,18 @@ h1 {
 
 @media (max-width: 1270px) {
   .testimonial-inner {
-    width: 100%; } }
+    width: 96%; } }
 
-@media (max-width: 950px) {
-  .testimonial__title {
-    margin-left: 20%; }
+@media (max-width: 1020px) {
+  .testimonial-heading {
+    margin-left: 15%; }
   .testimonial-wrapper {
     grid-template-columns: repeat(2, 280px);
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; } }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .testimonial-heading {
     margin: 0 auto; }
   .testimonial-wrapper {
@@ -808,7 +813,9 @@ h1 {
   .footer-container {
     width: 100%; }
   .footer-contacts {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .footer-nav {
+    margin: 100px 2vw 0; } }
 
 @media (max-width: 800px) {
   .footer-container {
